@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bg-color {
+  background: #e2e2e2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-grid {
+  display: grid;
+  border: 1px black solid;
+  width: 500px;
+  height: 500px;
+  background: #ededed;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16,1fr);
+}
+
+.divGrid {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+button {
+  padding: 7px 12px;
+  background: #e2e2e2;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: black;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#gridInfo {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 100%;
+  background: #e2e2e2;
+}
+
+                        /***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.7rem;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Removes the default appearance in webkit browsers */
+  height: 30px;
+  width: 30px;
+  background: black; 
+  border: 2px solid #ddd; /* Adds a border around the thumb */
+  border-radius: 50%; /* Makes the thumb round */
+  cursor: pointer; 
+  margin-top: -10px;
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+footer div {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+footer div img {
+  width: 25px;
+  height: 25px;
+}
+
